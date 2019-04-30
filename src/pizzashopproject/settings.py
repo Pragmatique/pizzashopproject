@@ -25,7 +25,7 @@ SECRET_KEY = 'xp))p%52yz!*=z)=$!*4i-wyl^2f1z^hh61@i#ttddo7ev^j@s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['damp-chamber-45738.herokuapp.com','localhost','127.0.0.1:8000',]
 
 
 # Application definition
@@ -172,6 +172,13 @@ LOGOUT_REDIRECT_URL='/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
+
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
+
+
+import dj_database_url
+db_from_env=dj_database_url.config()
+DATABASES['default'].update(db_from_env)
 
 # AUTHENTICATION_BACKENDS = (
 #    'rest_framework_social_oauth2.backends.DjangoOAuth2',
