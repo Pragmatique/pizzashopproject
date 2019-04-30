@@ -1,0 +1,1 @@
+web: gunicorn pizzashoproject.wsgi --log-file -
