@@ -25,7 +25,7 @@ SECRET_KEY = 'xp))p%52yz!*=z)=$!*4i-wyl^2f1z^hh61@i#ttddo7ev^j@s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['damp-chamber-45738.herokuapp.com','localhost','127.0.0.1:8000',]
+ALLOWED_HOSTS = ['damp-chamber-45738.herokuapp.com','localhost','127.0.0.1',]
 
 
 # Application definition

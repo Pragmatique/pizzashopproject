@@ -25,7 +25,7 @@ from django_angular_token_auth import urls as api_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/', views.home, name='home'),
+    path('', views.home, name='home'),
     path('pizzashop/sign-in/', auth_views.LoginView.as_view(template_name="pizzashop/sign_in.html"),
         {"template_name": "pizzashop/sign_in.html"},
         name='pizzashop-sign-in'),
